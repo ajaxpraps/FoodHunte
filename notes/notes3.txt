@@ -1,0 +1,19 @@
+1. what is pollyfills ?
+let's you have code which not works on older version then there is pollyfills code which will work in a same way but for older version  and this is done by babel automatically itself. babel is just a package which takes new code and spit older code.
+
+2. browserList : "last 2 chrome versions" that means it will definitely work on last two versions of chrome.
+*create-react-app uses webPack with babel
+
+3. you can assume npm run as npx   "npm run" when you use script to run "npm run start"
+4. you can use shortcut "npm start"== "npm run start"
+5. .babelrc is a configuration file for babel.
+
+6. React key concillation: when there is a many same childrens in element they give they unique key which is given in props other wise react have to do so much work
+
+7. react keeps the track of elements using keys
+8. react does things like  creating element,creating root where to inject react code and rendering.
+9. object return by react.createElement is converted into html with the help of react;
+
+10. lets say you make an react element heading and functional component Heading.
+then to render element(object) ---> root.render(heading);
+then to render component (function) ---> root.render(<Heading/>)

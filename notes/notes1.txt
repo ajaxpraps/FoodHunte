@@ -1,0 +1,51 @@
+1. what is react element ? it's an object;
+
+-> root.render() methode will finally update the dom
+-> ReactDom is responsible for all dom operation
+
+-> Beauty of react
+react can run on in a particular div  in whole html document -> means you can add react to your existing project;
+react will override the content inside the root walla div
+
+-> why jsx came ?
+because using createElement api  making many complex components is tedious thereFore jsx came into picture
+
+-> why css always import in head ?
+-- It is recommended because when you have the CSS declared before <body> starts, your styles has actually loaded already. So very quickly users see something appear on their screen (e.g. background colors). If not, users see blank screen for some time before the CSS reaches the user.
+-- and the second reason is body is for content and only inline css can be add to body;
+
+
+--> CDN makes access much faster;
+--> Needs for production app
+- minify the code 
+- optimization
+- bundle
+- caching
+- and lot more thing
+
+-->what is the means of "npm install -D parcel" ||  "npm install --save-dev parcel"
+--  some packages required -D and some not;
+D means it is installed as dev dependency only not glabal;
+-->version ="^2.3.2"  here "^" means that  this package will auto upgrade 
+
+
+--->>> what is package-lock.json 
+---- it locks the exact version we are using in our app && don't put it in gitignore file
+     it is because servers don't fetch code directly from local (first we push to git) then they get it from there we need to push 100% package.lock
+---- it maintains the integrity that the same package version is used on production also
+
+--> nodeModules-- dataBase of codes of dependencies and their (dependencie's code);
+
+--> devDepency vs dependency {
+
+https://sumantmishra.medium.com/npm-devdependencies-vs-dependencies-in-package-json-d6c790edd725
+
+}
+
+
+-->npx parcel index.html(starting file)        means execute using npm -- npx means execute
+
+
+--> I will never touch node moudles and package-lock.json
+
+---> we can not export or import scripts  but module can be.

@@ -1,0 +1,4 @@
+1. first we made the skeleton of Header component.
+   (i) it has Headercomponent and inside it a Title component.
+
+ 

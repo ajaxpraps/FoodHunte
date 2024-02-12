@@ -1,0 +1,30 @@
+// HMR- Hot module reloading is done by parcel means keep track of every file
+// How he does that -- with the help of -- File Watcher alogrithm which is written in c++
+// parcel.cache  is  the space taken by parcel to do it's stuff.
+// npx parcel index.html  -- it just creates a minified version(development build not production build) of our file to serve the server ,,, for production {npx parcel build index.html}  and it will push the build in dist folder. and give three bundled file css,html and js
+// what  are the things which parcel is doing --
+//  created a server for
+// 1.HMR hot moudle replacement
+// 1.File watching Algorithm
+// 1.Bundling making one file of each extension
+// 1.MINIFY on production build
+// treeShaking(removing dead codes)
+// 1.cleaning our code like removing console.log and much more things
+** it doesn't automatically removes console.logs for there is a package "babel-plugin-transform-remove-console"
+// Image optimizing {that which is you use for your project  not you getting by fetching}
+//  caching by development {it will take less time to build again again }
+//  compressing and rewritting (changes some variables name )
+//  cmpatible with older version of browser
+// provides HTTP functionality on dev machine {npx parcel index.html --https}
+// manges port numbers also
+// uses consistent hashing algorithm
+// it is zero config bundler doesn't want much information
+// Trasnsitive dependencies
+
+// in server there is node modules and every thing but server serves the build version of the app to the cliend version  otherwise the code will take so much time to upload because of node modules lol.
+// but what cause the website to  take more time is MEDIA;
+// and parcel does image optimization alos;
+// we should include parcle.cache in gitIgnore
+// that which can be generated on server save it to gitIgnore
+// if script is not typeed module then browser doesn't understand  import things
+// by adding BrowserLIst in package.json you can confirm how many browsers can render the app
